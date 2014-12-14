@@ -94,7 +94,7 @@ public class MainEngineTests extends Application {
 		// myLabels.add(labelText);
 
 		// create the floor
-		GameObject floorRight = new GameObject(null, "bricks.jpg", 200, 200,
+		GameObject floorRight = new GameObject(null, "bricks.jpg", 200, 150,
 				16.887420654296875, 200, 0, "floor_right");
 		floorRight.setIdentifier(new Identifier("floor", "a"));
 		// ugh, why do we have to set this explicitly?

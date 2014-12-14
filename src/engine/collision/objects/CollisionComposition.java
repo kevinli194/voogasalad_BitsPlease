@@ -25,13 +25,13 @@ public class CollisionComposition {
 		boolean y;
 		double xPoint;
 		double yPoint;
-		for (double i = 2.0; i < 150; i++) {
+		for (double i = 3.0; i < 150; i++) {
 			xPoint = other.getTranslateX();
 			yPoint = other.getTranslateY();
 			x = false;
 			y = false;
-			curX = xVel / (i - .9);
-			curY = yVel / (i - .9);
+			curX = xVel / (i/2.0-.4);
+			curY = yVel / (i/2.0-.4);
 			other.setTranslateX(xPoint - curX);
 			if (other.getRenderedNode().getBoundsInParent()
 					.intersects(fixed.getRenderedNode().getBoundsInParent())) {

@@ -2,7 +2,6 @@
 // Shreyas Bharadwaj
 package engine.actions;
 
-import engine.gameObject.GameObject;
 
 public class TranslateYType extends TypeAction{
 

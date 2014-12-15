@@ -2,7 +2,6 @@
 // Shreyas Bharadwaj
 package engine.actions;
 
-import engine.gameObject.GameObject;
 
 public class TranslateXType extends TypeAction {
 	

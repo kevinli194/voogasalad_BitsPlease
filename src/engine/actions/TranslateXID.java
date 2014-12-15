@@ -4,13 +4,12 @@ package engine.actions;
 
 import java.util.List;
 
-import engine.gameObject.GameObject;
 import engine.gameObject.Identifier;
 
 /**
  * 
  * @author Will
- *
+ * @author Shreyas
  */
 
 public class TranslateXID extends IDAction {

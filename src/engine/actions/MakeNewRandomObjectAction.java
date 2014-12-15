@@ -37,23 +37,5 @@ public class MakeNewRandomObjectAction extends MakeNewObjectAction{
               
         }
 	
-	@Override
-	public void execute() {
-		for (GameObject object: myMasterList){
-			if (object.getIdentifier().getType().equals(myType)){
-				makeRandomObject(object);
-			}
-		}
-		
-	}
 	
-	public void makeRandomObject(GameObject object){
-            double x =  (myUpperXBound-myLowerXBound) * r.nextFloat() + myLowerXBound; 
-            double y =  (myUpperYBound-myLowerYBound) * r.nextFloat() + myLowerYBound; 
-            GameObject newObject = new GameObject(object, x, y, myType); 
-		newObject.setIdentifier(new Identifier(object.getIdentifier()));
-		newObject.setPhysicsBody(new PhysicsBody(object.getPhysicsBody()));
-		myRenderer.createAndAssignRenderedNode(newObject);
-		myCurrentLevel.getGameObjectsCollection().add(newObject);
-	}
 }

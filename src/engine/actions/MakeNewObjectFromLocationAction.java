@@ -25,8 +25,8 @@ public class MakeNewObjectFromLocationAction extends MakeNewObjectAction{
         public void initialize(GameManager gameManager){
                 super.initialize(gameManager);
               
-                super.myMakeNewObject.setX(this.myX);
-                super.myMakeNewObject.setY(this.myY);   
+                super.myMakeNewObject.setX(myX);
+                super.myMakeNewObject.setY(myY);   
               
         }
 

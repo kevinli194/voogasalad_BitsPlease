@@ -115,7 +115,5 @@ public class JSONDataManager implements DataManager {
 	
 	private boolean hasValidName(String fileName) {
 		return fileName.endsWith(".json");
-//			if(fileName.endsWith(".json")) return true;
-//			else return false;
 	}
 }

@@ -1,6 +1,7 @@
 package engine.actions;
 
 import authoring.model.collections.GameObjectsCollection;
+import engine.GameManager;
 import engine.gameObject.GameObject;
 import engine.gameObject.Identifier;
 import engine.gameObject.components.PhysicsBody;
@@ -16,10 +17,18 @@ public class MakeNewObjectFromLocationAction extends MakeNewObjectAction{
 	
 	public MakeNewObjectFromLocationAction(String type, Double x, Double y) {
 		super(type);
-		super.myMakeNewObject.setX(x); 
-		super.myMakeNewObject.setY(y);
+		super.myX = (x); 
+		super.myY = (y);
 		
 	}
+	@Override
+        public void initialize(GameManager gameManager){
+                super.initialize(gameManager);
+              
+                super.myMakeNewObject.setX(this.myX);
+                super.myMakeNewObject.setY(this.myY);   
+              
+        }
 
 	
 

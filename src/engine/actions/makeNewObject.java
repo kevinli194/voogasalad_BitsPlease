@@ -5,7 +5,11 @@ import engine.gameObject.Identifier;
 import engine.gameObject.components.PhysicsBody;
 import engine.level.Level;
 import engine.render.GameObjectRenderer;
-
+/**
+ * This is my masterpiece
+ * @author ArihantJain
+ *
+ */
 public class makeNewObject implements IMakeNewObject{
 
     protected Double myX;

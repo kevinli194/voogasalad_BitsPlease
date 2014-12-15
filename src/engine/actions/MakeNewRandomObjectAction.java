@@ -1,11 +1,16 @@
 package engine.actions;
 
 import java.util.Random;
-
+import engine.GameManager;
 import engine.gameObject.GameObject;
 import engine.gameObject.Identifier;
 import engine.gameObject.components.PhysicsBody;
 
+/**
+ * This is my masterpiece
+ * @author ArihantJain
+ *
+ */
 public class MakeNewRandomObjectAction extends MakeNewObjectAction{
 
 	protected Double myLowerXBound;
@@ -23,6 +28,14 @@ public class MakeNewRandomObjectAction extends MakeNewObjectAction{
 	}
 
 	
+	@Override
+        public void initialize(GameManager gameManager){
+                super.initialize(gameManager);
+              
+                super.myMakeNewObject.setX((myUpperXBound-myLowerXBound) * r.nextFloat() + myLowerXBound);
+                super.myMakeNewObject.setY((myUpperYBound-myLowerYBound) * r.nextFloat() + myLowerYBound);   
+              
+        }
 	
 	@Override
 	public void execute() {

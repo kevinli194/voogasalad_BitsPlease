@@ -6,6 +6,9 @@ import authoring.view.icons.GameObjectIcon;
 import authoring.view.levelview.LevelsView;
 import authoring.view.levelview.SingleLevelView;
 
+//This entire file is part of my masterpiece.
+//ARJUN JAIN
+
 /**
  * Event handler for animation of dragging graphics on the level view.
  * Properties are not updated until drag is released.
@@ -34,9 +37,6 @@ public class GameObjGraphicDragHandler implements GameHandler<MouseEvent> {
 				* (slv.getPaneWidth() - slv.getViewWidth());
 		double mouseY = event.getSceneY() + slv.getVvalue()
 				* (slv.getPaneHeight() - slv.getViewHeight());
-		//System.out.println(slv.getVvalue());
-		//System.out.println(slv.getPaneWidth());
-
 		slv.moveGameObjectToLevel(g, mouseX, mouseY);
 	}
 

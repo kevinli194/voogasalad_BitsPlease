@@ -4,6 +4,9 @@ import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.event.EventType;
 
+//This entire file is part of my masterpiece.
+//ARJUN JAIN
+
 /**
  * The custom event handler hierarchy used in Authoring. Usage of event handlers
  * allow us to cut down and inclose interaction between view components and

@@ -5,6 +5,9 @@ import javafx.scene.input.MouseEvent;
 import authoring.view.icons.IPropertiesMaker;
 import authoring.view.propertiesview.PropertiesView;
 
+//This entire file is part of my masterpiece.
+//ARJUN JAIN
+
 /**
  * @author Kevin Li
  * @author Arjun Jain

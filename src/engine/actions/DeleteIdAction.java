@@ -1,34 +1,31 @@
+// This entire file is part of my masterpiece.
+// Shreyas Bharadwaj
 package engine.actions;
 
 import java.util.List;
 
-import authoring.model.collections.GameObjectsCollection;
 import engine.GameManager;
-import engine.gameObject.GameObject;
 import engine.gameObject.Identifier;
 
 public class DeleteIdAction extends IDAction{
 
-	private transient GameObjectsCollection myGameObjects; 
-	
+	private DeleteImpl myDeleteImpl;
 	
 	public DeleteIdAction(List<Identifier> ids){
 		super(ids);
+		myDeleteImpl = new DeleteImpl();
 	}
 	
 	
 	@Override
 	public void initialize(GameManager manager) {
 		myGameObjects = manager.getLevelManager().getGameObjects();
+		myDeleteImpl.setRenderer(manager.getRenderer());
 	}
 
 	@Override
 	public void execute() {
-		for (GameObject object: myGameObjects){
-			if (myIDs.contains(object.getIdentifier())){
-				myGameObjects.remove(object);
-			}
-		}
+		myDeleteImpl.delete(myGameObjects);
 		
 	}
 

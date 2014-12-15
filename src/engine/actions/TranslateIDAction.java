@@ -1,10 +1,10 @@
+
 package engine.actions;
 
 import java.util.List;
 
 import authoring.model.collections.GameObjectsCollection;
 import engine.GameManager;
-import engine.gameObject.GameObject;
 import engine.gameObject.Identifier;
 
 /**

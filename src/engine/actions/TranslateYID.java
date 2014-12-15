@@ -1,3 +1,5 @@
+// This entire file is part of my masterpiece.
+// Shreyas Bharadwaj
 package engine.actions;
 
 import java.util.List;
@@ -12,18 +14,18 @@ import engine.gameObject.Identifier;
  *
  */
 
-public class TranslateYID extends TranslateIDAction {
+public class TranslateYID extends IDAction {
 
+	private TranslateYImpl myTranslateYImpl;
+	
     public TranslateYID (List<Identifier> iDs, Double value) {
-        super(iDs, value);
+        super(iDs);
+        myTranslateYImpl = new TranslateYImpl(value);
     }
 
-    @Override
-    public void applyTransform () {
-    	for (GameObject object: myGameObjects){
-    		object.setTranslateY(object.getTranslateY() + myValue); 
-    	}
-
-    }
+	@Override
+	public void execute() {
+		myTranslateYImpl.translateY(myGameObjects);
+	}
 
 }

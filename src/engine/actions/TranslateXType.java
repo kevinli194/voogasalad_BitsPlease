@@ -1,20 +1,21 @@
+// This entire file is part of my masterpiece.
+// Shreyas Bharadwaj
 package engine.actions;
 
 import engine.gameObject.GameObject;
 
-public class TranslateXType extends TranslateTypeAction {
+public class TranslateXType extends TypeAction {
+	
+	private TranslateXImpl myTranslateXImpl;
 	
 	public TranslateXType(String type, Double value){
-		super(type, value);
+		super(type);
+		myTranslateXImpl = new TranslateXImpl(value);
 	}
 
 	@Override
 	public void execute() {
-		for (GameObject object: myGameObjects){
-			if (object.getIdentifier().getType().equals(myType)){
-	    		object.setTranslateX(object.getTranslateX() + myValue);
-			}
-		}
+		myTranslateXImpl.translateX(myGameObjects);
 	}
 
 }

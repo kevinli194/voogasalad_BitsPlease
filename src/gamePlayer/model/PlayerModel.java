@@ -9,6 +9,7 @@ import javafx.beans.property.StringProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import data.DataManager;
+import data.DataManagerFactory;
 import application.SplashScreen;
 import authoring.model.GameData;
 import authoring.model.collections.ConditionsCollection;
@@ -41,7 +42,8 @@ public class PlayerModel {
 
 	public PlayerModel() {
 		myPlayerView = new PlayerView(this);
-		myDataManager = new DataManager();
+		DataManagerFactory dmf = new DataManagerFactory();
+		myDataManager = dmf.create();
 		myButtonConditions = new ConditionsCollection();
 		myFileSelector = new FileSelectionWizard();
 		progressFileName = new SimpleStringProperty();

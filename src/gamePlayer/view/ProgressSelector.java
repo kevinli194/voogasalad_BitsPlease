@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import authoring.model.GameData;
 import data.DataManager;
+import data.DataManagerFactory;
 import errorsAndExceptions.ErrorPopUp;
 import javafx.beans.property.StringProperty;
 import javafx.beans.value.ChangeListener;
@@ -49,7 +50,8 @@ public class ProgressSelector {
 	public ProgressSelector(File gameLocation, StringProperty progressFileName) {
 		myGameLocation = gameLocation;
 		myProgressFolder = new File(gameLocation, DataManager.PROGRESS_FOLDER_NAME);
-		myDataManager = new DataManager();
+		DataManagerFactory dmf = new DataManagerFactory();
+		myDataManager = dmf.create();
 		myProgressList = FXCollections.observableArrayList();
 		myProgressListView = new ListView<String>(myProgressList);
 		addListViewListener();
@@ -145,7 +147,7 @@ public class ProgressSelector {
 	private void saveProgressEvent(TextField name, GameData saveData) {
 		String saveText = name.getText();
 		try {
-			myDataManager.writeProgressFile(saveData, myGameLocation, saveText);
+			myDataManager.writeProgressFile(myGameLocation, saveText, saveData);
 		} catch (IOException e) {
 			ErrorPopUp epu = new ErrorPopUp(e);
 			epu.display("Input/output error", false);
@@ -155,7 +157,7 @@ public class ProgressSelector {
 	
 	private void overwriteProgressEvent(GameData saveData) {
 		try {
-			myDataManager.writeProgressFile(saveData, myGameLocation, selectedProgressState);
+			myDataManager.writeProgressFile(myGameLocation, selectedProgressState, saveData);
 		} catch (IOException e) {
 			ErrorPopUp epu = new ErrorPopUp(e);
 			epu.display("Input/output error", false);

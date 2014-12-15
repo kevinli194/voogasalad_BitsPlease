@@ -19,6 +19,7 @@ import authoring.controller.AuthoringController;
 import authoring.model.AuthoringModel;
 import authoring.model.GameData;
 import data.DataManager;
+import data.DataManagerFactory;
 import errorsAndExceptions.ErrorPopUp;
 
 /**
@@ -54,7 +55,8 @@ public class ProgramMenu extends MenuBar {
 		// ControllerMap = new HashMap<>
 		myFileChooser = new FileChooser();
 		myDirectoryChooser = new DirectoryChooser();
-		myDataManager = new DataManager();
+		DataManagerFactory dmf = new DataManagerFactory();
+		myDataManager = dmf.create();
 		this.getMenus().add(FileMenu());
 
 	}

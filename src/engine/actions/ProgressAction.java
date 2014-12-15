@@ -1,6 +1,7 @@
 package engine.actions;
 
 import data.DataManager;
+import data.DataManagerFactory;
 import engine.GameManager;
 
 public abstract class ProgressAction implements Action, Initializable{
@@ -12,8 +13,8 @@ public abstract class ProgressAction implements Action, Initializable{
 	@Override
 	public void initialize(GameManager manager) {
 		myGameManager = manager;
-		myDataManager = new DataManager();
-		
+		DataManagerFactory dmf = new DataManagerFactory();
+		myDataManager = dmf.create();		
 	}
 
 	

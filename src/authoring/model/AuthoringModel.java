@@ -11,6 +11,7 @@ import authoring.model.collections.ImagesCollection;
 import authoring.model.collections.LevelsCollection;
 import authoring.model.collections.SoundsCollection;
 import data.DataManager;
+import data.DataManagerFactory;
 import engine.conditions.Condition;
 import engine.gameObject.GameObject;
 import engine.gameObject.Identifier;
@@ -34,7 +35,8 @@ public class AuthoringModel {
 
 	public AuthoringModel() {
 		myGame = new GameData();
-		myDataManager = new DataManager();
+		DataManagerFactory dmf = new DataManagerFactory();
+		myDataManager = dmf.create();
 	}
 
 	public GameData getData() {
@@ -48,11 +50,9 @@ public class AuthoringModel {
 		// TODO - Data
 		GameData mySerializableGame = convertToSerializable();
 		try {
-			boolean success = myDataManager.writeGameFile(mySerializableGame,
-					dataPath);
+			boolean success = myDataManager.writeGameFile(dataPath, mySerializableGame);
 			//System.out.println("game saved = " + success);
-			myDataManager.writeProgressFile(mySerializableGame, dataPath,
-					"initial");
+			myDataManager.writeProgressFile(dataPath, "initial", mySerializableGame);
 		} catch (IOException e) {
 			ErrorPopUp epu = new ErrorPopUp(e);
 			epu.display("Won't save", false);

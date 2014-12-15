@@ -1,10 +1,8 @@
 package gamePlayer.view;
 
 import java.io.File;
-import java.nio.file.Path;
 
 import javafx.stage.DirectoryChooser;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 
 /**

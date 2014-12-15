@@ -1,3 +1,6 @@
+// This entire file is part of my masterpiece
+// ABHISHEK B
+
 package gamePlayer.view;
 
 import javafx.scene.Group;
@@ -16,8 +19,8 @@ public class GameCanvas implements ViewController{
 		return (Group)myCanvas;
 	}
 		
-	public void addToGroup(Node n){
-		myCanvas.getChildren().add(n);
+	public void addToGroup(Node node){
+		myCanvas.getChildren().add(node);
 	}
 	
 	public void clear(){

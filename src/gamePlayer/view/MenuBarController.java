@@ -1,3 +1,6 @@
+// This entire file is part of my masterpiece
+// ABHISHEK B
+
 package gamePlayer.view;
 
 import gamePlayer.model.PlayerModel;
@@ -12,6 +15,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Tab;
 
 /**
+ * This is the controller class for the Ribbon Tab Pane
+ * It contains all of the methods that are called from the FXML file
+ * via the onAction tag, and interacts directly with the model to
+ * make these files.
  * 
  * @author Shreyas B
  * @author Abhishek B
@@ -57,12 +64,12 @@ public class MenuBarController implements Initializable{
 	
 	@FXML
 	private void fetchGameFromWeb(final ActionEvent event) {
-		myPlayerModel.fetchGameFromWeb();
+		// Unimplemented method
 	}
 	
 	@FXML
 	private void saveGameToWeb(final ActionEvent event) {
-		myPlayerModel.saveGameToWeb();
+		// Unimplemented method
 	}
 	
 	@FXML

@@ -1,3 +1,6 @@
+// This entire file is part of my masterpiece.
+// ABHISHEK BALAKRISHNAN
+
 package gamePlayer.model;
 
 import java.io.File;
@@ -88,14 +91,6 @@ public class PlayerModel {
 				myPlayerView.getGroup(), myGameLocation.toString());
 		myGameManager.initialize();
 		extractButtonConditions();
-	}
-
-	public void saveGameToWeb() {
-		
-	}
-	
-	public void fetchGameFromWeb() {
-		
 	}
 	
 	public ConditionsCollection getButtonConditions() {

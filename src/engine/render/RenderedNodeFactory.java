@@ -1,5 +1,5 @@
-// This entire file is part of my masterpiece.
-// Will Chang
+// This entire file is part of my masterpiece. 
+// Will Chang 
 package engine.render;
 
 import java.io.FileInputStream;

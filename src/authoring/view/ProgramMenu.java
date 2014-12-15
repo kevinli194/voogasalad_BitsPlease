@@ -30,6 +30,7 @@ import errorsAndExceptions.ErrorPopUp;
  * @author Chris Bernt
  * @author Wesley Valentine
  * @author Arjun Jain
+ * @author Eli Lichtenberg
  */
 public class ProgramMenu extends MenuBar {
 	private static final String DEFAULT_RESOURCE = "authoring.resources.languages/language";
@@ -113,7 +114,7 @@ public class ProgramMenu extends MenuBar {
 		GameData gameData;
 		try {
 			gameData = myDataManager.readGameFile(gameLocation);
-			System.out.println("game loaded");
+			//System.out.println("game loaded");
 			int currentTab = myTabs.getSelectionModel().getSelectedIndex();
 			((AuthoringView) myTabs.getTabs().get(currentTab).getContent())
 					.getController().loadData(gameData);

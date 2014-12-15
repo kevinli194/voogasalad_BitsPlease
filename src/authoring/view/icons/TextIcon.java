@@ -1,10 +1,10 @@
+// This entire file is part of my masterpiece.
+// Kevin Li
 package authoring.view.icons;
 
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import authoring.eventhandlers.GameHandler;
-import authoring.view.propertiesview.Properties;
-import engine.level.Level;
 
 /**
  * @author Kevin Li
@@ -12,16 +12,17 @@ import engine.level.Level;
  * @author Wesley Valentine
  * @author Arjun Jain
  */
-public abstract class TextIcon extends BaseIcon implements IPropertiesMaker {
+public abstract class TextIcon extends BaseIcon {
 
 	public static final int DEFAULT_FONT_SIZE = 20;
 
 	public TextIcon(String s, GameHandler... events) {
 		super(s, events);
-		setupGraphic();
+		makeIcon();
 	}
 
-	public void setupGraphic() {
+	@Override
+	public void makeIcon() {
 		Text text = new Text(myLabel);
 		text.setFont(new Font(DEFAULT_FONT_SIZE));
 		this.getChildren().add(text);
@@ -30,8 +31,5 @@ public abstract class TextIcon extends BaseIcon implements IPropertiesMaker {
 		}
 
 	}
-
-	@Override
-	public abstract Properties makeProperties();
 
 }

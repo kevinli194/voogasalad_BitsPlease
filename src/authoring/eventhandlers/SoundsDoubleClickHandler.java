@@ -19,7 +19,7 @@ public class SoundsDoubleClickHandler implements GameHandler<MouseEvent> {
 		SoundIcon g = (SoundIcon) event.getSource();
 		if (event.getButton().equals(MouseButton.PRIMARY)) {
 			if (event.getClickCount() == 2) {
-				g.play();
+				g.togglePlaying();
 			}
 		}
 	}

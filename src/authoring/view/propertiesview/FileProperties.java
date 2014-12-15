@@ -26,7 +26,7 @@ public class FileProperties extends Properties {
 
 		HBox imageField = new HBox();
 		imageField.getChildren().add(new Text("File: "));
-		imageField.getChildren().add(new TextField(file.getName()));
+		imageField.getChildren().add(new TextField(file.getLabel()));
 		this.getChildren().add(imageField);
 
 	}

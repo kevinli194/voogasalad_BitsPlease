@@ -1,3 +1,5 @@
+// This entire file is part of my masterpiece.
+// Kevin Li
 package authoring.view.icons;
 
 import java.io.File;

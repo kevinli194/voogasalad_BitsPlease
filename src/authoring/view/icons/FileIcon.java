@@ -1,8 +1,12 @@
+// This entire file is part of my masterpiece.
+// Kevin Li
 package authoring.view.icons;
 
 import java.io.File;
 
 import authoring.eventhandlers.GameHandler;
+import authoring.view.propertiesview.FileProperties;
+import authoring.view.propertiesview.Properties;
 
 /**
  * @author Kevin Li
@@ -18,5 +22,9 @@ public abstract class FileIcon extends BaseIcon {
 		myGameLocation = gameLoc;
 	}
 
-	protected abstract void makeIcon();
+	@Override
+	public Properties makeProperties() {
+		return new FileProperties(this);
+	}
+
 }

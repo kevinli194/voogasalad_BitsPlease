@@ -1,3 +1,5 @@
+// This entire file is part of my masterpiece.
+// Kevin Li
 package authoring.view.icons;
 
 import authoring.eventhandlers.AddConditionIDHandler;
@@ -13,7 +15,7 @@ import engine.level.Level;
  * @author Wesley Valentine
  * @author Arjun Jain
  */
-public class LevelIcon extends TextIcon implements IPropertiesMaker {
+public class LevelIcon extends TextIcon {
 
 	public static final int DEFAULT_FONT_SIZE = 20;
 	private Level myLevel;

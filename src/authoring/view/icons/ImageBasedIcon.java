@@ -1,3 +1,5 @@
+// This entire file is part of my masterpiece.
+// Kevin Li
 package authoring.view.icons;
 
 import java.awt.image.BufferedImage;
@@ -10,22 +12,17 @@ import javafx.scene.image.ImageView;
 
 import javax.imageio.ImageIO;
 
-import errorsAndExceptions.ErrorPopUp;
 import authoring.eventhandlers.GameHandler;
-import authoring.view.propertiesview.FileProperties;
-import authoring.view.propertiesview.Properties;
+import errorsAndExceptions.ErrorPopUp;
 
 /**
- * Represents an image, but does not instantiate JavaFX object so that the
- * object can easily be serialized if necessary.
- * 
  * @author Chris Bernt
  * @author Kevin Li
  * @author Arjun Jain
  * @author Wesley Valentine
  *
  */
-public abstract class ImageBasedIcon extends FileIcon{
+public abstract class ImageBasedIcon extends FileIcon {
 
 	private static final int DEFAULT_ROTATION = 0;
 	private static final int DEFAULT_IMAGE_HEIGHT = 50;
@@ -43,14 +40,6 @@ public abstract class ImageBasedIcon extends FileIcon{
 		makeIcon();
 
 	}
-
-	/**
-	 * creates an instance of the JavaFX object that can be displayed on the
-	 * GUI. Takes in a MouseEvent so that the graphic will respond to the
-	 * specified events.
-	 * 
-	 * @param event
-	 */
 
 	@Override
 	protected void makeIcon() {
@@ -78,6 +67,17 @@ public abstract class ImageBasedIcon extends FileIcon{
 		}
 	}
 
+	/**
+	 * Sets the dimensions of the icon based on parameters.
+	 * 
+	 * @param width
+	 *            Width of ImageView.
+	 * @param height
+	 *            Height of ImageView
+	 * @param rotation
+	 *            Rotation of ImageView
+	 */
+
 	public void setDimensions(double width, double height, double rotation) {
 		myWidth = width;
 		myHeight = height;
@@ -92,7 +92,6 @@ public abstract class ImageBasedIcon extends FileIcon{
 	 * preserves its dimensions.
 	 */
 	public void scaleDimensions() {
-		// automatically calculates height
 		myImageView.setPreserveRatio(true);
 		myImageView.setFitWidth(myWidth);
 		myHeight = myImageView.getFitHeight();

@@ -1,3 +1,5 @@
+// This entire file is part of my masterpiece.
+// Kevin Li
 package authoring.view.icons;
 
 import java.io.File;
@@ -8,8 +10,6 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.stage.FileChooser;
 import authoring.eventhandlers.GameHandler;
-import authoring.view.propertiesview.FileProperties;
-import authoring.view.propertiesview.Properties;
 
 /**
  * @author Kevin Li
@@ -17,7 +17,7 @@ import authoring.view.propertiesview.Properties;
  * @author Wesley Valentine
  * @author Arjun Jain
  */
-public class SoundIcon extends FileIcon implements IPropertiesMaker {
+public class SoundIcon extends FileIcon {
 	private static final int DEFAULT_SOUND_ICON_SIZE = 60;
 	private Image mySoundIcon;
 	private MediaPlayer myAudioPlayer;
@@ -34,6 +34,9 @@ public class SoundIcon extends FileIcon implements IPropertiesMaker {
 
 	}
 
+	/**
+	 * Method for making a media player with the media associated with the icon.
+	 */
 	private void generateMedia() {
 		File file = new File(myGameLocation.getPath() + "/sounds/" + myLabel);
 		Media media = new Media(file.toURI().toString());
@@ -53,17 +56,16 @@ public class SoundIcon extends FileIcon implements IPropertiesMaker {
 
 	}
 
-	public void play() {
+	/**
+	 * Method to be called that toggles the media.
+	 */
+
+	public void togglePlaying() {
 		if (myAudioPlayer.getStatus().equals(MediaPlayer.Status.PLAYING))
 			myAudioPlayer.stop();
 		else {
 			myAudioPlayer.play();
 		}
-	}
-
-	@Override
-	public Properties makeProperties() {
-		return new FileProperties(this);
 	}
 
 }

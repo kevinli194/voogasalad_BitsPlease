@@ -1,3 +1,5 @@
+// This entire file is part of my masterpiece.
+// Kevin Li
 package authoring.view.icons;
 
 import authoring.eventhandlers.AddActionHandler;
@@ -12,7 +14,7 @@ import engine.conditions.Condition;
  * @author Wesley Valentine
  * @author Arjun Jain
  */
-public class ConditionIcon extends TextIcon implements IPropertiesMaker {
+public class ConditionIcon extends TextIcon {
 
 	private Condition myCondition;
 

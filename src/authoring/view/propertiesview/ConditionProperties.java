@@ -35,7 +35,7 @@ public class ConditionProperties extends Properties {
 
 		VBox imageField = new VBox();
 		PropertyTextField nameField = new PropertyTextField("Name: ",
-				icon.getName());
+				icon.getLabel());
 		nameField.setDisable(true);
 		imageField.getChildren().add(nameField);
 		this.getChildren().add(imageField);

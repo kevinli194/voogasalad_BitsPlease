@@ -29,7 +29,7 @@ public class LevelProperties extends Properties {
 
 		this.getChildren().clear();
 
-		myMap.put("name", new PropertyTextField("Level: ", graphic.getName()));
+		myMap.put("name", new PropertyTextField("Level: ", graphic.getLabel()));
 		myMap.put("background image", new PropertyTextField(
 				"Background Image: ", graphic.getLevel().getBackgroundImage()));
 		myMap.put("background music", new PropertyTextField(

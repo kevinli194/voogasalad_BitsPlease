@@ -1,3 +1,5 @@
+// This entire file is part of my masterpiece.
+// Kevin Li
 package authoring.view.icons;
 
 import java.io.File;
@@ -16,17 +18,11 @@ import authoring.view.propertiesview.Properties;
  * @author Arjun Jain
  */
 
-public class ImageIcon extends ImageBasedIcon implements IPropertiesMaker {
+public class ImageIcon extends ImageBasedIcon {
 
 	public ImageIcon(String name, File location, GameHandler[] event) {
 		super(name, location, event);
 		scaleDimensions();
 		this.addLabel();
 	}
-
-	@Override
-	public Properties makeProperties() {
-		return new FileProperties(this);
-	}
-
 }

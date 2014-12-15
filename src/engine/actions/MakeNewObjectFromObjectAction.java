@@ -7,6 +7,11 @@ import engine.gameObject.GameObject;
 import engine.gameObject.Identifier;
 import engine.gameObject.components.PhysicsBody;
 
+/**
+ * This is my masterpiece
+ * @author ArihantJain
+ *
+ */
 public class MakeNewObjectFromObjectAction extends MakeNewObjectAction {
 
 	private Identifier objectID; 
@@ -22,24 +27,11 @@ public class MakeNewObjectFromObjectAction extends MakeNewObjectAction {
 		super.initialize(gameManager);
 		myObject = gameManager.objectForIdentifier(objectID);
 		
+		
+		super.myMakeNewObject.setX(myObject.getTranslateX()+.5*myObject.getHeight());
+		super.myMakeNewObject.setY(myObject.getTranslateY()+.5*myObject.getHeight());   
+		super.myMakeNewObject.setOrientation(myObject.getOrientation());
 	}
 	
-	@Override
-	public void execute() {
-		for (GameObject object: myMasterList){
-			//TODO: To TEMPLATELIST
-			if (object.getIdentifier().getType().equals(myType)){
-				GameObject newObject = new GameObject(object, myObject.getTranslateX()+.5*myObject.getHeight(), myObject.getTranslateY()+.5*myObject.getHeight(), myType);
-				newObject.setIdentifier(new Identifier(object.getIdentifier()));
-				newObject.setPhysicsBody(new PhysicsBody(object.getPhysicsBody()));
-				myRenderer.createAndAssignRenderedNode(newObject);
-				newObject.setOrientation(myObject.getOrientation());
-				myCurrentLevel.getGameObjectsCollection().add(newObject);	
-			}
-			
-		}
-		
-		
-	}
 
 }

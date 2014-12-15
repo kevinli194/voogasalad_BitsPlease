@@ -4,7 +4,7 @@ import authoring.model.collections.GameObjectsCollection;
 import engine.GameManager;
 import engine.gameObject.GameObject;
 import engine.gameObject.Identifier;
-import engine.render.GameObjectRenderer;
+import engine.render.Renderer;
 
 public class LabelIntIncrementAction implements Action, Initializable {
 	private Identifier myLabelID;
@@ -29,7 +29,7 @@ public class LabelIntIncrementAction implements Action, Initializable {
 	@Override
 	public void execute() {
 		if(obj != null) {
-			GameObjectRenderer renderer = myManager.getRenderer();
+			Renderer renderer = myManager.getRenderer();
 			Integer i = Integer.valueOf(obj.getLabel());
 			i+=1;
 			renderer.removeRenderedNode(myLabelID);

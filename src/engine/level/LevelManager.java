@@ -7,7 +7,7 @@ import authoring.model.collections.LevelsCollection;
 import engine.conditions.Condition;
 import engine.gameObject.GameObject;
 import engine.gameObject.Identifier;
-import engine.render.GameObjectRenderer;
+import engine.render.Renderer;
 import engine.sound.SoundUtility;
 
 /**
@@ -25,7 +25,7 @@ public class LevelManager implements Iterable<Level> {
 	private ConditionsCollection myConditions;
 	private Level myCurrentLevel;
 	// private int myCurrentIndex;
-	private GameObjectRenderer myRenderer;
+	private Renderer myRenderer;
 	private SoundUtility mySoundPlayer;
 	
 	/**
@@ -39,7 +39,7 @@ public class LevelManager implements Iterable<Level> {
 	 */
 	public LevelManager(LevelsCollection levels,
 			GameObjectsCollection gameObjects, ConditionsCollection conditions,
-			GameObjectRenderer renderer, SoundUtility soundPlayer) {
+			Renderer renderer, SoundUtility soundPlayer) {
 		myLevels = levels;
 		myGameObjects = gameObjects;
 		myConditions = conditions;

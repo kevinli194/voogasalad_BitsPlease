@@ -5,11 +5,11 @@ import java.util.List;
 import engine.GameManager;
 import engine.gameObject.GameObject;
 import engine.level.Level;
-import engine.render.GameObjectRenderer;
+import engine.render.Renderer;
 
 public class PaintCanvas extends RenderAction {
 
-    public PaintCanvas (List<GameObject> objects, GameObjectRenderer renderer, Level level) {
+    public PaintCanvas (List<GameObject> objects, Renderer renderer, Level level) {
         super(objects, renderer, level);
     }
 

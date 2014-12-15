@@ -11,7 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.scene.Group;
 import javafx.util.Duration;
-import engine.render.GameObjectRenderer;
+import engine.render.Renderer;
 import engine.sound.SoundUtility;
 import engine.conditions.Condition;
 import engine.gameObject.*;
@@ -28,7 +28,7 @@ import engine.level.LevelManager;
 public class GameManager {
     private ConditionsCollection myGameConditions;
     private GameObjectsCollection myGameObjects;
-    private GameObjectRenderer myGameObjectRenderer;
+    private Renderer myGameObjectRenderer;
     private SoundUtility mySoundUtility;
     private Group myRootGroup;
     private Timeline myAnimation;
@@ -43,7 +43,7 @@ public class GameManager {
         this.myGameObjects = myGameObjects;
         this.myRootGroup = myRootGroup;
         this.myLevels = myLevels;
-        this.myGameObjectRenderer = new GameObjectRenderer(myRootGroup,relativePath);
+        this.myGameObjectRenderer = new Renderer(myRootGroup,relativePath);
         this.mySoundUtility = new SoundUtility(myLevels, relativePath);
         this.myRelativePath = relativePath;
         createLevelManager();
@@ -164,7 +164,7 @@ public class GameManager {
         return myGameConditions;
     }
     
-    public GameObjectRenderer getRenderer () {
+    public Renderer getRenderer () {
         return myGameObjectRenderer;
     }
     

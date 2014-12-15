@@ -1,17 +1,14 @@
+// This entire file is part of my masterpiece.
+// Will Chang
 package engine.gameObject;
 
 import engine.gameObject.components.*;
 import engine.render.RenderedNode;
-import engine.scrolling.ScrollingUtility;
-
 import java.awt.geom.Point2D;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
 import javafx.beans.property.DoubleProperty;
-import javafx.scene.image.Image;
 
 /**
  * This class initiates a list of components which are characteristics of the GameObject. 
@@ -33,7 +30,6 @@ public class GameObject implements IEnabled, Iterable<Component>, Identifiable{
     private double myXCoord;
     private double myYCoord;
     private transient RenderedNode myRenderedNode;
-    private transient ScrollingUtility myScrollingUtility;
 
     private boolean myCollision;
 
@@ -47,9 +43,6 @@ public class GameObject implements IEnabled, Iterable<Component>, Identifiable{
 
     //Is it colliding with something
     private boolean collisionEnabled;
-    
-    private String gameLocation ="/src/SonicFalls/";
-    private File gameLocationFile = new File(gameLocation);
 
 
     /**
@@ -76,28 +69,28 @@ public class GameObject implements IEnabled, Iterable<Component>, Identifiable{
         setDefaultData(); 
     }
 
+    public GameObject (GameObject g, double x, double y, String type){
+        this(g.getComponents(), g.getCurrentImageName(), x, y, g.getHeight(), 
+             g.getWidth(), g.getRotation(), type);
+
+    }
 
     public GameObject (GameObject g){
-        this(g.getComponents(), g.getCurrentImageName(), g.getX(), g.getY(), g.getHeight(), g.getWidth(), g.getRotation(), g.getID());
+        this(g.getComponents(), g.getCurrentImageName(), g.getX(), g.getY(), 
+             g.getHeight(), g.getWidth(), g.getRotation(), g.getID());
         this.setPhysicsBody(g.getPhysicsBody());
     }
 
-    public GameObject (GameObject g, double x, double y, String type){
-        this(g.getComponents(), g.getCurrentImageName(), x, y, g.getHeight(), g.getWidth(), g.getRotation(), type);
-    	
-    }
-
     private void setDefaultData() {
-
-		List<Component> defaultComponents= new ArrayList<Component>(); 
-		if (myComponents != null){
-		          for (Component c: myComponents){
-	                        defaultComponents.add(c.getClone());
-	                }
-		}
-		myDefaultData = new DefaultData(defaultComponents, myCurrentImageName, myXCoord, myYCoord,  
-				myHeight, myWidth, myRotation); 
-	}
+        List<Component> defaultComponents= new ArrayList<Component>(); 
+        if (myComponents != null){
+            for (Component c: myComponents){
+                defaultComponents.add(c.getClone());
+            }
+        }
+        myDefaultData = new DefaultData(defaultComponents, myCurrentImageName, myXCoord, myYCoord,  
+                                        myHeight, myWidth, myRotation); 
+    }
 
 
 
@@ -213,7 +206,6 @@ public class GameObject implements IEnabled, Iterable<Component>, Identifiable{
 
     /**
      * Updates all components of GameObject
-     * TODO Check if necessary... 
      */
 
     public void update () {
@@ -236,7 +228,7 @@ public class GameObject implements IEnabled, Iterable<Component>, Identifiable{
     }
 
     /**
-     * Temporary Map based getter...
+     * Temporary Map based getter
      * @param iD
      * @return
      */
@@ -267,13 +259,7 @@ public class GameObject implements IEnabled, Iterable<Component>, Identifiable{
     }
 
     public void setCurrentImagePath (String imageName) { 
-        // myRenderedNode.getImageView().setImage(new Image(getClass().getResourceAsStream(myCurrentImageName)));
-        String rootPath = gameLocationFile.toString();
-        //myRenderedNode.getImageView().setImage(new Image("file:"+rootPath+imageName));
-        //System.out.println(System.getProperty("user.dir") + "\src\SonicFalls\images\rolling.gif");
-//        System.out.println(rootPath + imageName);
-        String str = System.getProperty("user.dir") + "\\src\\SonicFalls\\images\\rolling.gif";
-        myRenderedNode.getImageView().setImage(new Image("file:"+str));
+        myCurrentImageName = imageName;
     }
 
     @Override
@@ -331,10 +317,6 @@ public class GameObject implements IEnabled, Iterable<Component>, Identifiable{
         return myCollision;
     }
 
-    public String toString(){
-        return myID;
-    }
-
     public void reset(){
         myRotation=myDefaultData.getRotation();
         myXCoord=myDefaultData.getXCoordinate();
@@ -349,11 +331,11 @@ public class GameObject implements IEnabled, Iterable<Component>, Identifiable{
     public void setLabel (String label) {
         myLabel = label;
     }
-    
+
     public String getLabel () {
         return myLabel;
     }
-    
+
     @Override
     public void setIdentifier (Identifier myId) {
         this.myId = myId;

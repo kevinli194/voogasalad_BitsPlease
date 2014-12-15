@@ -5,12 +5,12 @@ import java.util.List;
 import engine.GameManager;
 import engine.gameObject.GameObject;
 import engine.gameObject.Identifier;
-import engine.render.GameObjectRenderer;
+import engine.render.Renderer;
 
 public class ChangeImageIDAction extends IDAction{
 
 	private String myPathName;
-	private transient GameObjectRenderer myRenderer; 
+	private transient Renderer myRenderer; 
 	
 	public ChangeImageIDAction(List<Identifier> ids, String pathName){
 		super(ids);

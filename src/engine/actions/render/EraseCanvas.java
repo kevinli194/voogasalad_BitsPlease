@@ -6,11 +6,11 @@ import javafx.scene.Group;
 import engine.GameManager;
 import engine.gameObject.GameObject;
 import engine.level.Level;
-import engine.render.GameObjectRenderer;
+import engine.render.Renderer;
 
 public class EraseCanvas extends RenderAction {
 
-    public EraseCanvas (List<GameObject> objects, GameObjectRenderer renderer, Level level) {
+    public EraseCanvas (List<GameObject> objects, Renderer renderer, Level level) {
         super(objects, renderer, level);
     }
     

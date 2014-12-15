@@ -5,13 +5,13 @@ import java.util.Random;
 import authoring.model.collections.GameObjectsCollection;
 import engine.GameManager;
 import engine.level.Level;
-import engine.render.GameObjectRenderer;
+import engine.render.Renderer;
 
 public abstract class MakeNewObjectAction implements Action, Initializable {
 
 	protected transient Level myCurrentLevel; 
 	protected transient GameObjectsCollection myMasterList;
-	protected transient GameObjectRenderer myRenderer; 
+	protected transient Renderer myRenderer; 
 	protected String myType; 
 	protected transient Random r;
 

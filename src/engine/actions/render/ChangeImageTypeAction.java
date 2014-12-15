@@ -3,12 +3,12 @@ package engine.actions.render;
 import engine.GameManager;
 import engine.actions.TypeAction;
 import engine.gameObject.GameObject;
-import engine.render.GameObjectRenderer;
+import engine.render.Renderer;
 
 public class ChangeImageTypeAction extends TypeAction{
 
 	private String myPathName; 
-	private transient GameObjectRenderer myRenderer; 
+	private transient Renderer myRenderer; 
 	
 	public ChangeImageTypeAction(String type, String pathname){
 		super(type);

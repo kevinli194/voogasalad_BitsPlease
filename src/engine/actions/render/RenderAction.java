@@ -7,7 +7,7 @@ import engine.actions.Action;
 import engine.actions.Initializable;
 import engine.gameObject.GameObject;
 import engine.level.Level;
-import engine.render.GameObjectRenderer;
+import engine.render.Renderer;
 
 /**
  * Does rendering for all Sprites.
@@ -18,7 +18,7 @@ import engine.render.GameObjectRenderer;
 public abstract class RenderAction implements Action, Initializable {
 
     protected transient List<GameObject> myGameObjects;
-    protected transient GameObjectRenderer myRenderer;
+    protected transient Renderer myRenderer;
     protected transient Level myLevel;
     
     /**
@@ -27,7 +27,7 @@ public abstract class RenderAction implements Action, Initializable {
      */
     //potentially just give it the ID of the objects??
     //or just give it an iterator?
-    public RenderAction (List<GameObject> objects, GameObjectRenderer renderer, Level level) {
+    public RenderAction (List<GameObject> objects, Renderer renderer, Level level) {
         myGameObjects = objects;
         myRenderer = renderer;
         myLevel = level;

@@ -3,10 +3,10 @@ package engine.actions;
 import java.util.Iterator;
 import engine.GameManager;
 import engine.gameObject.GameObject;
-import engine.render.GameObjectRenderer;
+import engine.render.Renderer;
 
 public class DeleteInteractingObjectsAction extends TypeAction {
-    private transient GameObjectRenderer myRenderer;
+    private transient Renderer myRenderer;
     
     public DeleteInteractingObjectsAction(String type){
             super(type);

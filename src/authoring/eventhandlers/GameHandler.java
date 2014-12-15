@@ -1,3 +1,5 @@
+//This entire file is part of my masterpiece.
+//WESLEY VALENTINE
 package authoring.eventhandlers;
 
 import javafx.event.Event;

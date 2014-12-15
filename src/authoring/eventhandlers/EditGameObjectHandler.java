@@ -1,3 +1,5 @@
+//This entire file is part of my masterpiece.
+//WESLEY VALENTINE
 package authoring.eventhandlers;
 
 import javafx.event.Event;
@@ -30,7 +32,6 @@ public class EditGameObjectHandler implements GameHandler<Event> {
 
 	@Override
 	public void handle(Event arg0) {
-
 		String id = myLevelsView.getCurrentLevel().getID();
 		for (Level level : myLevelsCol) {
 			if (level.getIdentifier().getUniqueId().equals(id)) {
@@ -42,8 +43,6 @@ public class EditGameObjectHandler implements GameHandler<Event> {
 					level.addGameObject(editedOne);
 					myPropertiesView.displayProperties(editedOne);
 				}
-
-				// System.out.println(level.getGameObjectsCollection());
 			}
 		}
 	}

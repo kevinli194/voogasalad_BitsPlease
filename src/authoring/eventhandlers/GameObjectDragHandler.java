@@ -1,3 +1,5 @@
+//This entire file is part of my masterpiece.
+//WESLEY VALENTINE
 package authoring.eventhandlers;
 
 import static authoring.view.levelview.SingleLevelView.OBJECT_X_OFFSET;
@@ -39,7 +41,6 @@ public class GameObjectDragHandler implements GameHandler<MouseEvent> {
 
 	@Override
 	public void handle(MouseEvent event) {
-		// System.out.println("reached");
 		GameObjectIcon g = (GameObjectIcon) event.getSource();
 		double mouseX = event.getSceneX();
 		double mouseY = event.getSceneY();
@@ -47,8 +48,8 @@ public class GameObjectDragHandler implements GameHandler<MouseEvent> {
 		String id = myLevelView.getCurrentLevel().getID();
 		for (Level level : myLevelsCollection) {
 			if (level.getIdentifier().getUniqueId().equals(id)) {
-				GameObject go = g.getGameObject();
-				level.removeGameObject(go);
+				GameObject gameObject = g.getGameObject();
+				level.removeGameObject(gameObject);
 
 				double dragX = mouseX + OBJECT_X_OFFSET;
 				double dragY = mouseY + OBJECT_Y_OFFSET;
@@ -56,29 +57,25 @@ public class GameObjectDragHandler implements GameHandler<MouseEvent> {
 				double newY = mouseY;
 
 				if (dragX < 0) {
-					//System.out.println("off left");
 					newX = -1 * OBJECT_X_OFFSET;
 				}
 				if (dragX > slv.getViewWidth()) {
-					//System.out.println("off right");
 					newX = slv.getViewWidth() - OBJECT_X_OFFSET - g.getWidth();
 				}
 				if (dragY < 0) {
-					//System.out.println("off top");
 					newY = -1 * OBJECT_Y_OFFSET;
 				}
 				if (dragY > slv.getViewHeight()) {
-					//System.out.println("off bottom");
 					newY = slv.getViewHeight() - OBJECT_Y_OFFSET
 							- g.getHeight();
 				}
-				go.setX(newX + slv.getHvalue()
+				gameObject.setX(newX + slv.getHvalue()
 						* (slv.getPaneWidth() - slv.getViewWidth()));
-				go.setY(newY + slv.getVvalue()
+				gameObject.setY(newY + slv.getVvalue()
 						* (slv.getPaneHeight() - slv.getViewHeight()));
 
-				level.addGameObject(go);
-				myProperties.displayProperties(go);
+				level.addGameObject(gameObject);
+				myProperties.displayProperties(gameObject);
 			}
 		}
 

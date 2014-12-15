@@ -1,3 +1,5 @@
+//This entire file is part of my masterpiece.
+//CHRIS BERNT
 package authoring.eventhandlers;
 
 import javafx.event.EventType;
@@ -11,19 +13,23 @@ import authoring.view.propertiesview.PropertiesView;
  * @author Chris Bernt
  * @author Wesley Valentine
  * @author Safkat Islam
+ * 
+ * The general properties click handler for icons. Since all normal icons
+ * must implement IPropertiesMaker, the parameters to the click 
+ * handle will be able to construt their own properties objects to be displayed.
  */
 public class IconClickHandler implements GameHandler<MouseEvent> {
 
-	private PropertiesView myProperties;
+	private PropertiesView myPropertiesView;
 
 	public IconClickHandler(PropertiesView props) {
-		myProperties = props;
+		myPropertiesView = props;
 	}
 
 	@Override
 	public void handle(MouseEvent event) {
 		IPropertiesMaker icon = (IPropertiesMaker) event.getSource();
-		myProperties.displayProperties(icon);
+		myPropertiesView.displayProperties(icon.makeProperties());
 	}
 
 	@Override

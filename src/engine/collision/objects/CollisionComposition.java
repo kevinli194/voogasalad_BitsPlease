@@ -71,7 +71,7 @@ public class CollisionComposition {
 				.getValue() == 1) ? one : two;
 		GameObject other = (one.getPhysicsBody().getScalar(a.toString())
 				.getValue() == 1) ? two : one;
-		
+		System.out.println("HII");
 			if (xAxis) {
 				other.getPhysicsBody().setVelocity(
 						new Velocity(0.0, other.getPhysicsBody().getVelocity()

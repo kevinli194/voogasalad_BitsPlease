@@ -44,9 +44,9 @@ public class PropertiesView extends CollectionView {
 	 * 
 	 * @param icon
 	 */
-	public void displayProperties(IPropertiesMaker icon) {
+	public void displayProperties(Properties props) {
 		myContents.getChildren().clear();
-		this.setContent(icon.makeProperties());
+		this.setContent(props);
 	}
 
 	/**

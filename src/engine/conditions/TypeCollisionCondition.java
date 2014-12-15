@@ -67,6 +67,7 @@ public class TypeCollisionCondition extends TimeCondition {
     				            secondObject.enableCollision();
     				            if (myActions != null){
                                                 for (Action a: myActions){
+                                                	System.out.println("executing collision actions");
                                                         a.execute(); 
                                                 }
     				            }

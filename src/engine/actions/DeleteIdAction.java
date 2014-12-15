@@ -27,6 +27,7 @@ public class DeleteIdAction extends IDAction{
 		for (GameObject object: myGameObjects){
 			if (myIDs.contains(object.getIdentifier())){
 				myGameObjects.remove(object);
+				break;
 			}
 		}
 		

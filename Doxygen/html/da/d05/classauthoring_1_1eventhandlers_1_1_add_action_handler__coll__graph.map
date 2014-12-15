@@ -1,0 +1,25 @@
+<map id="authoring.eventhandlers.AddActionHandler" name="authoring.eventhandlers.AddActionHandler">
+<area shape="rect" id="node2" href="$d3/d6a/interfaceauthoring_1_1eventhandlers_1_1_game_handler.html" title="authoring.eventhandlers.\lGameHandler\&lt; Event \&gt;" alt="" coords="2426,94,2609,135"/>
+<area shape="rect" id="node3" href="$d1/d3b/classengine_1_1conditions_1_1_condition.html" title="engine.conditions.Condition" alt="" coords="2418,376,2617,403"/>
+<area shape="rect" id="node4" href="$dc/df6/interfaceengine_1_1game_object_1_1_identifiable.html" title="engine.gameObject.Identifiable" alt="" coords="329,512,549,539"/>
+<area shape="rect" id="node17" href="$df/d84/classengine_1_1level_1_1_level.html" title="engine.level.Level" alt="" coords="799,627,934,653"/>
+<area shape="rect" id="node5" href="$d2/d15/interfaceengine_1_1actions_1_1_initializable.html" title="engine.actions.Initializable" alt="" coords="2027,528,2216,555"/>
+<area shape="rect" id="node6" href="$d4/dac/classengine_1_1game_object_1_1_identifier.html" title="engine.gameObject.Identifier" alt="" coords="335,393,542,420"/>
+<area shape="rect" id="node8" href="$d6/d94/classengine_1_1_game_manager.html" title="engine.GameManager" alt="" coords="2039,939,2203,965"/>
+<area shape="rect" id="node9" href="$df/de5/classauthoring_1_1model_1_1collections_1_1_levels_collection.html" title="authoring.model.collections.\lLevelsCollection" alt="" coords="765,1101,968,1142"/>
+<area shape="rect" id="node11" href="$df/d67/classengine_1_1level_1_1_level_manager.html" title="engine.level.LevelManager" alt="" coords="1570,908,1761,935"/>
+<area shape="rect" id="node24" href="$da/d90/classengine_1_1sound_1_1_sound_utility.html" title="engine.sound.SoundUtility" alt="" coords="1164,985,1353,1012"/>
+<area shape="rect" id="node10" href="$d4/d3b/classauthoring_1_1model_1_1collections_1_1_general_collection.html" title="authoring.model.collections.\lGeneralCollection\&lt; Level \&gt;" alt="" coords="337,1101,540,1142"/>
+<area shape="rect" id="node13" href="$dd/d8d/classengine_1_1render_1_1_renderer.html" title="engine.render.Renderer" alt="" coords="1173,780,1344,807"/>
+<area shape="rect" id="node15" href="$d5/d30/classengine_1_1render_1_1_rendered_node_factory.html" title="engine.render.RenderedNode\lFactory" alt="" coords="763,870,971,911"/>
+<area shape="rect" id="node16" href="$d9/db5/classengine_1_1_file_path_utility.html" title="engine.FilePathUtility" alt="" coords="362,911,515,937"/>
+<area shape="rect" id="node18" href="$d3/d8d/classdata_1_1_observable.html" title="data.Observable" alt="" coords="375,664,502,691"/>
+<area shape="rect" id="node20" href="$d1/d32/classauthoring_1_1model_1_1collections_1_1_game_objects_collection.html" title="authoring.model.collections.\lGameObjectsCollection" alt="" coords="337,735,540,777"/>
+<area shape="rect" id="node21" href="$d4/d3b/classauthoring_1_1model_1_1collections_1_1_general_collection.html" title="authoring.model.collections.\lGeneralCollection\&lt; GameObject \&gt;" alt="" coords="6,735,250,777"/>
+<area shape="rect" id="node34" href="$d6/d32/classauthoring_1_1view_1_1wizards_1_1_wizard.html" title="authoring.view.wizards.Wizard" alt="" coords="2016,205,2227,232"/>
+<area shape="rect" id="node27" href="$db/d2a/classauthoring_1_1model_1_1collections_1_1_conditions_collection.html" title="authoring.model.collections.\lConditionsCollection" alt="" coords="1157,1191,1360,1233"/>
+<area shape="rect" id="node28" href="$d4/d3b/classauthoring_1_1model_1_1collections_1_1_general_collection.html" title="authoring.model.collections.\lGeneralCollection\&lt; Condition \&gt;" alt="" coords="755,1191,979,1233"/>
+<area shape="rect" id="node33" href="$d2/d02/classauthoring_1_1view_1_1wizards_1_1_action_choice_wizard.html" title="authoring.view.wizards.Action\lChoiceWizard" alt="" coords="2413,159,2621,201"/>
+<area shape="rect" id="node45" href="$d4/d30/classauthoring_1_1view_1_1wizards_1_1_condition_parameter_wizard.html" title="authoring.view.wizards.Condition\lParameterWizard" alt="" coords="2403,225,2631,266"/>
+<area shape="rect" id="node39" href="$d4/d31/classauthoring_1_1view_1_1wizards_1_1_action_choices_v_box.html" title="authoring.view.wizards.Action\lChoicesVBox" alt="" coords="2017,59,2225,101"/>
+</map>

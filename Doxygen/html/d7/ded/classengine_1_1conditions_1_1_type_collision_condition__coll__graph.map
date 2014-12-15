@@ -1,0 +1,21 @@
+<map id="engine.conditions.TypeCollisionCondition" name="engine.conditions.TypeCollisionCondition">
+<area shape="rect" id="node2" href="$d7/d6b/classengine_1_1conditions_1_1_time_condition.html" title="engine.conditions.TimeCondition" alt="" coords="2523,820,2752,847"/>
+<area shape="rect" id="node3" href="$d1/d3b/classengine_1_1conditions_1_1_condition.html" title="engine.conditions.Condition" alt="" coords="2273,769,2471,796"/>
+<area shape="rect" id="node4" href="$dc/df6/interfaceengine_1_1game_object_1_1_identifiable.html" title="engine.gameObject.Identifiable" alt="" coords="329,41,549,68"/>
+<area shape="rect" id="node17" href="$df/d84/classengine_1_1level_1_1_level.html" title="engine.level.Level" alt="" coords="799,339,934,365"/>
+<area shape="rect" id="node5" href="$d2/d15/interfaceengine_1_1actions_1_1_initializable.html" title="engine.actions.Initializable" alt="" coords="1904,820,2093,847"/>
+<area shape="rect" id="node6" href="$d4/dac/classengine_1_1game_object_1_1_identifier.html" title="engine.gameObject.Identifier" alt="" coords="335,601,542,628"/>
+<area shape="rect" id="node8" href="$d6/d94/classengine_1_1_game_manager.html" title="engine.GameManager" alt="" coords="1917,341,2081,368"/>
+<area shape="rect" id="node9" href="$df/de5/classauthoring_1_1model_1_1collections_1_1_levels_collection.html" title="authoring.model.collections.\lLevelsCollection" alt="" coords="765,469,968,510"/>
+<area shape="rect" id="node11" href="$df/d67/classengine_1_1level_1_1_level_manager.html" title="engine.level.LevelManager" alt="" coords="1527,384,1718,411"/>
+<area shape="rect" id="node24" href="$da/d90/classengine_1_1sound_1_1_sound_utility.html" title="engine.sound.SoundUtility" alt="" coords="1164,285,1353,312"/>
+<area shape="rect" id="node10" href="$d4/d3b/classauthoring_1_1model_1_1collections_1_1_general_collection.html" title="authoring.model.collections.\lGeneralCollection\&lt; Level \&gt;" alt="" coords="337,485,540,526"/>
+<area shape="rect" id="node13" href="$dd/d8d/classengine_1_1render_1_1_renderer.html" title="engine.render.Renderer" alt="" coords="1173,187,1344,213"/>
+<area shape="rect" id="node15" href="$d5/d30/classengine_1_1render_1_1_rendered_node_factory.html" title="engine.render.RenderedNode\lFactory" alt="" coords="763,94,971,135"/>
+<area shape="rect" id="node16" href="$d9/db5/classengine_1_1_file_path_utility.html" title="engine.FilePathUtility" alt="" coords="362,184,515,211"/>
+<area shape="rect" id="node18" href="$d3/d8d/classdata_1_1_observable.html" title="data.Observable" alt="" coords="375,284,502,311"/>
+<area shape="rect" id="node20" href="$d1/d32/classauthoring_1_1model_1_1collections_1_1_game_objects_collection.html" title="authoring.model.collections.\lGameObjectsCollection" alt="" coords="337,678,540,719"/>
+<area shape="rect" id="node21" href="$d4/d3b/classauthoring_1_1model_1_1collections_1_1_general_collection.html" title="authoring.model.collections.\lGeneralCollection\&lt; GameObject \&gt;" alt="" coords="6,678,250,719"/>
+<area shape="rect" id="node27" href="$db/d2a/classauthoring_1_1model_1_1collections_1_1_conditions_collection.html" title="authoring.model.collections.\lConditionsCollection" alt="" coords="1157,614,1360,655"/>
+<area shape="rect" id="node28" href="$d4/d3b/classauthoring_1_1model_1_1collections_1_1_general_collection.html" title="authoring.model.collections.\lGeneralCollection\&lt; Condition \&gt;" alt="" coords="755,614,979,655"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="engine.render.Renderer.setBackGroundImage" name="engine.render.Renderer.setBackGroundImage">
+<area shape="rect" id="node2" href="$d5/d30/classengine_1_1render_1_1_rendered_node_factory.html#ae9ab86f88eb96945a412e561179aa070" title="engine.render.RenderedNode\lFactory.createImageAndView" alt="" coords="263,70,471,111"/>
+<area shape="rect" id="node6" href="$df/d84/classengine_1_1level_1_1_level.html#a5dc36c31fcc8e0b5cbe2a942ec101fdb" title="engine.level.Level.getBackground\lImage" alt="" coords="249,135,485,177"/>
+<area shape="rect" id="node3" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#ae8b88e1cf489e935426e2e252defbae0" title="engine.gameObject.GameObject.get\lCurrentImageName" alt="" coords="533,5,789,46"/>
+<area shape="rect" id="node4" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#aaeb5730a3b51fe9cb3d817ea7172cfc2" title="engine.gameObject.GameObject.get\lHeight" alt="" coords="533,70,789,111"/>
+<area shape="rect" id="node5" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#a31aa2c854220621b49fc5575b50b9342" title="engine.gameObject.GameObject.get\lWidth" alt="" coords="533,135,789,177"/>
+</map>

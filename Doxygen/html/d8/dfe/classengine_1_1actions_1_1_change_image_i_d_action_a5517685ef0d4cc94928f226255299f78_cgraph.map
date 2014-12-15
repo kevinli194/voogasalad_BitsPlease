@@ -1,0 +1,23 @@
+<map id="engine.actions.ChangeImageIDAction.execute" name="engine.actions.ChangeImageIDAction.execute">
+<area shape="rect" id="node2" href="$dd/d8d/classengine_1_1render_1_1_renderer.html#a569f6bb2f9c218ed015949dff459b1ee" title="engine.render.Renderer.create\lAndAssignRenderedNode" alt="" coords="266,331,481,373"/>
+<area shape="rect" id="node22" href="$dd/d8d/classengine_1_1render_1_1_renderer.html#a980236dc1412ddf1c0623ab38392bac7" title="engine.render.Renderer.remove\lRenderedNode" alt="" coords="262,397,485,438"/>
+<area shape="rect" id="node3" href="$d5/d30/classengine_1_1render_1_1_rendered_node_factory.html#a359dcce722371dfb49b79528930c1b05" title="engine.render.RenderedNode\lFactory.createRenderedNode" alt="" coords="557,266,765,307"/>
+<area shape="rect" id="node20" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#accd456b2eaab9c7056de825a28b066c8" title="engine.gameObject.GameObject.get\lIdentifier" alt="" coords="533,331,789,373"/>
+<area shape="rect" id="node21" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#ab09d473d8c2afe8cefb2ce2481bc66fd" title="engine.gameObject.GameObject.set\lRenderedNode" alt="" coords="534,397,789,438"/>
+<area shape="rect" id="node4" href="$d2/d82/classengine_1_1render_1_1_rendered_node.html#a520a8c03b505d10c69e010e603cadfdd" title="engine.render.RenderedNode.set\lImageView" alt="" coords="856,5,1088,46"/>
+<area shape="rect" id="node5" href="$d5/d30/classengine_1_1render_1_1_rendered_node_factory.html#ae9ab86f88eb96945a412e561179aa070" title="engine.render.RenderedNode\lFactory.createImageAndView" alt="" coords="868,70,1076,111"/>
+<area shape="rect" id="node9" href="$d2/d82/classengine_1_1render_1_1_rendered_node.html#ad73c81ad48b40faea3818c9a7bbfdcf0" title="engine.render.RenderedNode.set\lCollisionBody" alt="" coords="856,201,1088,242"/>
+<area shape="rect" id="node10" href="$d5/d30/classengine_1_1render_1_1_rendered_node_factory.html#ac14d2f5a3da79d92c967fe22bc82c1ed" title="engine.render.RenderedNode\lFactory.createCollisionBody" alt="" coords="868,266,1076,307"/>
+<area shape="rect" id="node14" href="$d2/d82/classengine_1_1render_1_1_rendered_node.html#a312c663dd1144ff206ecfa1ea8c95a81" title="engine.render.RenderedNode.set\lLabel" alt="" coords="856,331,1088,373"/>
+<area shape="rect" id="node15" href="$d5/d30/classengine_1_1render_1_1_rendered_node_factory.html#a4e1f4508b1c12b958bd3c88a35a4e872" title="engine.render.RenderedNode\lFactory.createLabel" alt="" coords="868,135,1076,177"/>
+<area shape="rect" id="node17" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#a606c7293c2bfac0af1fb42143bf527f6" title="engine.gameObject.GameObject.getX" alt="" coords="840,397,1104,424"/>
+<area shape="rect" id="node18" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#a1988806ef560c9384f3844d0666a9450" title="engine.gameObject.GameObject.getY" alt="" coords="841,448,1103,475"/>
+<area shape="rect" id="node19" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#ae94fe532960bd29f64c2dc19ec0af798" title="engine.gameObject.GameObject.getID" alt="" coords="837,499,1107,525"/>
+<area shape="rect" id="node6" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#ae8b88e1cf489e935426e2e252defbae0" title="engine.gameObject.GameObject.get\lCurrentImageName" alt="" coords="1155,5,1411,46"/>
+<area shape="rect" id="node7" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#aaeb5730a3b51fe9cb3d817ea7172cfc2" title="engine.gameObject.GameObject.get\lHeight" alt="" coords="1155,135,1411,177"/>
+<area shape="rect" id="node8" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#a31aa2c854220621b49fc5575b50b9342" title="engine.gameObject.GameObject.get\lWidth" alt="" coords="1155,70,1411,111"/>
+<area shape="rect" id="node11" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#a60c5b6933aac9969491a3562a963c043" title="engine.gameObject.GameObject.get\lPhysicsBody" alt="" coords="1155,266,1411,307"/>
+<area shape="rect" id="node12" href="$d9/d9d/classengine_1_1game_object_1_1components_1_1_physics_body.html#aba2ed3bce8ee8e404907c88b144626fc" title="engine.gameObject.components.\lPhysicsBody.getCollisionBodyHeight" alt="" coords="1157,331,1408,373"/>
+<area shape="rect" id="node13" href="$d9/d9d/classengine_1_1game_object_1_1components_1_1_physics_body.html#ae64e43632570392c3118b3d00af853fc" title="engine.gameObject.components.\lPhysicsBody.getCollisionBodyWidth" alt="" coords="1161,397,1404,438"/>
+<area shape="rect" id="node16" href="$d0/d7f/classengine_1_1game_object_1_1_game_object.html#a5c379828f3bb19a91935f965c48a91a5" title="engine.gameObject.GameObject.get\lLabel" alt="" coords="1155,201,1411,242"/>
+</map>

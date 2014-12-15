@@ -1,0 +1,5 @@
+<map id="engine.actions.DeleteInteractingObjectsAction.execute" name="engine.actions.DeleteInteractingObjectsAction.execute">
+<area shape="rect" id="node2" href="$df/d84/classengine_1_1level_1_1_level.html#ac927326f1a3d7e17b5d577c336a5cfc1" title="engine.level.Level.getGame\lObjectsCollection" alt="" coords="295,5,494,46"/>
+<area shape="rect" id="node3" href="$d4/d3b/classauthoring_1_1model_1_1collections_1_1_general_collection.html#a79482ff667a22bb0d5b702c03261fe8d" title="authoring.model.collections.\lGeneralCollection.iterator" alt="" coords="293,70,496,111"/>
+<area shape="rect" id="node4" href="$dd/d8d/classengine_1_1render_1_1_renderer.html#a980236dc1412ddf1c0623ab38392bac7" title="engine.render.Renderer.remove\lRenderedNode" alt="" coords="283,135,506,177"/>
+</map>

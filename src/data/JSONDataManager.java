@@ -19,6 +19,7 @@ import engine.actions.Action;
 import engine.conditions.Condition;
 import engine.physics.Force;
 import engine.physics.Scalar;
+import errorsAndExceptions.ErrorPopUp;
 
 /**
  * DataManager that saves and loads JSON files.
@@ -92,6 +93,11 @@ public class JSONDataManager implements DataManager {
 	}
 	
 	private boolean writeFile(File dataPath, String fileName, Object obj) throws IOException {
+			if(!hasValidName(fileName)) {
+				ErrorPopUp epu = new ErrorPopUp();
+				epu.display("Invalid file name", false);
+				return false;
+			}
 			String json = gson.create().toJson(obj);
 			File f = new File(dataPath, fileName);
 			FileWriter writer = new FileWriter(f);
@@ -113,10 +119,5 @@ public class JSONDataManager implements DataManager {
 			if(fileName.endsWith(".json")) return true;
 			else return false;
 		}
-	}
-	
-	private String checkForExtension(String fileName) {
-		if(fileName.endsWith(".json")) return fileName;
-		else return fileName + ".json";
 	}
 }

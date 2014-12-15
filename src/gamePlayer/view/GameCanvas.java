@@ -1,6 +1,3 @@
-// This entire file is part of my masterpiece
-// ABHISHEK B
-
 package gamePlayer.view;
 
 import javafx.scene.Group;

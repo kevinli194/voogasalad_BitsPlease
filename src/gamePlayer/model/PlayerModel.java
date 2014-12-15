@@ -1,6 +1,3 @@
-// This entire file is part of my masterpiece.
-// ABHISHEK BALAKRISHNAN
-
 package gamePlayer.model;
 
 import java.io.File;

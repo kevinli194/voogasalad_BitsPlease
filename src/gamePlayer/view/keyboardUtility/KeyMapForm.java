@@ -1,3 +1,6 @@
+// THIS CODE IS A PART OF MY MASTERPIECE
+// SAFKAT ISLAM
+
 package gamePlayer.view.keyboardUtility;
 
 import javafx.event.ActionEvent;
@@ -50,8 +53,6 @@ public class KeyMapForm {
 		root.getChildren().add(formVBox);
 		b.setOnAction(mapKey);
 		form.show();
-		
-//		return myComboBox.getValue();
 	}
 	
 	private EventHandler<ActionEvent> mapKey = new EventHandler<ActionEvent>() {

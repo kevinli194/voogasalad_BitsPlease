@@ -1,3 +1,6 @@
+// THIS CODE IS A PART OF MY MASTERPIECE
+// SAFKAT ISLAM
+
 package gamePlayer.view.keyboardUtility;
 
 import java.util.HashMap;
@@ -56,7 +59,7 @@ public class KeyboardView {
 		buildKeyboard();
 	}
 
-	public void buildKeyboard() {
+	private void buildKeyboard() {
 		int num = 0;
 		for(int i = 0; i < NUM_KEYS_IN_COLUMN; i++)
 		{
@@ -86,8 +89,8 @@ public class KeyboardView {
 
 	private ComboBox<String> comboBoxForButton() {
 		ComboBox<String> functionCombos = new ComboBox<String>();
-		for (Iterator<Condition> conditionIterator = myButtonConditions.iterator(); conditionIterator.hasNext();) {
-			ButtonPressCondition condition = (ButtonPressCondition) conditionIterator.next();
+		for (Condition c : myButtonConditions) {
+			ButtonPressCondition condition = (ButtonPressCondition) c;
 			functionCombos.getItems().add(condition.getKeyIdentifier());
 		}
 		return functionCombos;

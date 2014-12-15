@@ -16,7 +16,9 @@ import engine.level.Level;
 
 /**
  * Event handler for dragging graphics on the level view. Fills properties view
- * with status and allows user to drag objects to adjust the level.
+ * with status and allows user to drag objects to adjust the level. Prevents
+ * user error by correcting a GameObject's position if it is dragged past the
+ * boundaries of the current level.
  * 
  * @author Kevin Li
  * @author Arjun Jain

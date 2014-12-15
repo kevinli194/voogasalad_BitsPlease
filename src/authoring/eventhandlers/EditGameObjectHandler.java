@@ -11,6 +11,10 @@ import engine.gameObject.GameObject;
 import engine.level.Level;
 
 /**
+ * This handler updates a selected GameObject with user input from the
+ * PropertiesView. It does this by removing the old GameObject from its level
+ * and replacing it with the newly constructed GameObject.
+ * 
  * @author Kevin Li
  * @author Arjun Jain
  * @author Chris Bernt

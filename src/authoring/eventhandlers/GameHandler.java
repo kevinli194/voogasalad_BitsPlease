@@ -7,9 +7,11 @@ import javafx.event.EventHandler;
 import javafx.event.EventType;
 
 /**
- * The custom event handler hierarchy used in Authoring. Usage of event handlers
- * allow us to cut down and inclose interaction between view components and
- * view/model interactions.
+ * This is the superclass for the custom event handler hierarchy used in
+ * Authoring. Usage of event handlers allow us to cut down and inclose
+ * interaction between view components and view/model interactions. GameHandlers
+ * are instantiated and assigned to view components in the AuthoringController's
+ * initializeGameHandlers method.
  * 
  * @author Kevin Li
  * @author Arjun Jain
@@ -19,11 +21,16 @@ import javafx.event.EventType;
  */
 public interface GameHandler<T extends Event> extends EventHandler<T> {
 	/**
-	 * Handle that determines what the handler does.
+	 * This method is executed when the handler is triggered.
 	 */
 	@Override
 	public void handle(T arg0);
 
+	/**
+	 * Specify the type of event that can trigger this handler.
+	 * 
+	 * @return
+	 */
 	public EventType<T> getEventType();
 
 }

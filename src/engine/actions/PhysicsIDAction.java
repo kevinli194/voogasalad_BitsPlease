@@ -1,9 +1,9 @@
+// This entire file is part of my masterpiece.
+// Ben Reisner
 package engine.actions;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
-
 import engine.GameManager;
 import engine.collision.objects.CollisionComposition;
 import engine.gameObject.GameObject;
@@ -16,12 +16,12 @@ import engine.gameObject.Identifier;
  */
 public abstract class PhysicsIDAction implements Action, Initializable {
 
-	protected Double myValue;
+	protected Object myValue;
 	protected transient CollisionComposition myCollision;
 	protected transient Collection<GameObject> myObjects;
-	protected List<Identifier> myID;
+	protected Collection<Identifier> myID;
 
-	public PhysicsIDAction(List<Identifier> id, Double value) {
+	public PhysicsIDAction(Collection<Identifier> id, Object value) {
 		myID = id;
 		myValue = value;
 	}
@@ -40,18 +40,19 @@ public abstract class PhysicsIDAction implements Action, Initializable {
 		}
 	}
 
-	public abstract void applyPhysics(Collection<GameObject> myObjects);
-
-	protected void forHelper(Collection<GameObject> myObjects,
+	protected void loopAndExecute(Collection<GameObject> myObjects,
 			TwoArgInterface myOperation, Object value) {
-		myObjects.forEach(x -> myOperation.operation(x, value));
+		myObjects.forEach(x->myOperation.operation(x, value));
 	}
+
+	public abstract void applyPhysics(Collection<GameObject> myObjects);
 
 	protected interface TwoArgInterface {
 		public void operation(GameObject x, Object a);
 	}
 
+	// don't know if this was ever used, maybe for collisions
 	protected interface ThreeArgInterface {
-		public void operation(GameObject x, GameObject y, boolean bool);
+		public void operation(GameObject x, GameObject y, Object value);
 	}
 }

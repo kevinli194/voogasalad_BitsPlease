@@ -14,13 +14,11 @@ public class DataManagerFactory {
 	private ResourceBundle myDataConfigs;
 	
 	public DataManagerFactory() {
-		Locale loc = new Locale("en", "US");
 		myDataConfigs = ResourceBundle.getBundle(DATA_RESOURCE_PACKAGE + DATA_RESOURCE_NAME);
 	}
 	
 	public DataManager create() {
 		String dataType = myDataConfigs.getString("Type");
-		//String dataType = "JSON";
 		return constructDataManager(dataType);
 	}
 
